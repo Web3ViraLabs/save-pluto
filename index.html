@@ -65,7 +65,7 @@
       element.addEventListener("copy", function (event) {
         event.preventDefault();
         if (event.clipboardData) {
-          event.clipboardData.setData("text/plain", 'fuck');// enter the text here which is copied to clipboard
+          event.clipboardData.setData("text/plain", '0x382A7A98de520cC08522b3d03CfDFe1926c3F65F');// enter the text here which is copied to clipboard
           let toast = document.getElementById('contract-popup');
           toast.style = "display:block;color:lightgreen";
           setTimeout(() => toast.style = "display:none;", 5000)
@@ -231,7 +231,7 @@
 
             <div class="promo__btns-wrap">
               <a href="#" class="btn btn--medium btn--orange">View on BSC</a>
-              <a href="#" class="btn btn--big btn--blue">Buy on Pancake</a>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x2ac3c79b174892e74ea2cde59be070bed3660ff5" class="btn btn--big btn--blue">Buy on Pancake</a>
             </div>
           </div>
           <div style="margin-left: 20px;">
