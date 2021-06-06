@@ -86,12 +86,23 @@
       background-color: #fff;
       z-index: 9999;
     }
+    .mdl-dialog{
+  overflow:scroll;position:fixed;top:5%;width:90%;height:auto;z-index: 10000000;
+}@media only screen and (max-width: 600px) {
+ .mdl-dialog{
+   height:80vh;
+   margin-bottom: 5%;
+ }
+ .mdl-dialog h4{
+   font-size:x-large;
+ }
+}
   </style>
 </head>
 
 <body >
   <div class="preloader"></div>
- <dialog class="mdl-dialog" style="position:fixed;top:15%;width:90%;height:auto;z-index: 10000000;">
+ <dialog class="mdl-dialog" >
     <h4 class="mdl-dialog__title">Terms and conditions</h4>
     <div class="mdl-dialog__content" style="overflow-y: scroll;height:auto" >
       <p>
