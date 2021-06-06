@@ -6656,7 +6656,6 @@ section {
 
 .promo__img {
   position: absolute;
-  top: -110px;
   display: none;
 }
 
@@ -8365,8 +8364,8 @@ label.error {
 .footer {
   padding-bottom: 80px;
 }
-dialog::-webkit-scrollbar{
-display: none !important;
+dialog::-webkit-scrollbar {
+  display: none !important;
 }
 .footer .logo {
   margin-bottom: 25px;
@@ -8417,7 +8416,7 @@ display: none !important;
     -ms-flex-pack: center;
     justify-content: center;
   }
- 
+
   .facts__item {
     margin-top: 0 !important;
     margin: 0 25px 20px;
@@ -8432,8 +8431,8 @@ display: none !important;
   .footer {
     text-align: center;
   }
-   dialog{
-    width:90%;
+  dialog {
+    width: 90%;
   }
   .footer .logo {
     -webkit-box-pack: center;
@@ -8460,8 +8459,8 @@ display: none !important;
     display: -ms-flexbox;
     display: flex;
   }
-  dialog{
-    width:90%
+  dialog {
+    width: 90%;
   }
   .promo .btn {
     width: auto;
