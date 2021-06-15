@@ -16,7 +16,7 @@
   <meta property="og:image" content="path/to/image.html" />
   <link rel="icon" href="img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
-  
+
   <!-- Template Basic Images End -->
 
   <!-- Custom Browsers Color Start -->
@@ -75,6 +75,7 @@
 
 
   </script>
+
   <script type="text/javascript">
     async function loadData() {
       let btc = await fetch('https://static.coinpaper.io/api/coins/btc-bitcoin.json')
@@ -102,6 +103,14 @@
       position: fixed;
       background-color: #fff;
       z-index: 9999;
+    }
+
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
     }
   </style>
 </head>
@@ -182,13 +191,21 @@
         </ul>
       </div>
     </div>
-
-    <section class="promo">
+    <video autoplay muted loop id="myVideo">
+      <source src="./video/SpaceBG.mp4" type="video/mp4">
+    </video>
+    <section class="promo" style="padding-top:100px">
       <div class="container">
-        <div class="row">
-          <div class="col-12 promo__content" data-aos="fade-right">
-            <h1><br><span>The Real Redemption Story</span></h1>
-            <p>
+        <div class="row"
+          style="display:flex;flex-direction:column;width:100%;align-items:center;margin:0px;justify-content:center">
+          <img src="img/pluto.png" data-aos="fade-up" alt=""
+          id="imagefff"
+            style="height:250px;width:250px;margin-bottom: 20px;align-self: center;" />
+          <div class="col-12 promo__content" data-aos="fade-right"
+            style="display:flex;align-items:center;flex-direction:column">
+            <h1><span style="font-size:3rem;font-weight:600">SAVEPLUTO</span></h1>
+            <h1><span style="font-size:xx-large;font-weight:600">The Real Redemption Story</span></h1>
+            <p style="color:white; font-size:large">
               The SAVEPLUTO Protocol is a community driven, fair launched
               DeFi Token. Three simple functions occur during each trade:
               Reflection, LP Acquisition, and Burn.
@@ -196,18 +213,22 @@
 
 
             <div class="promo__btns-wrap">
-              <a href="https://bscscan.com/token/0x382a7a98de520cc08522b3d03cfdfe1926c3f65f" class="btn btn--medium btn--orange">View on BSC</a>
-              <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x382a7a98de520cc08522b3d03cfdfe1926c3f65f" class="btn btn--big btn--blue">Buy on Pancake</a>
-            </div> 
+              <a href="https://bscscan.com/token/0x382a7a98de520cc08522b3d03cfdfe1926c3f65f"
+                class="btn btn--medium btn--orange">View on BSC</a>
+              <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x382a7a98de520cc08522b3d03cfdfe1926c3f65f"
+                class="btn btn--big btn--blue"><b>Buy on Pancake</b></a>
+            </div>
           </div>
           <div style="margin-left: 20px;">
-            <h3 style="color: white"><span id="contract-address" onclick="copy_()">Contract Address 0x382A7A98de520cC08522b3d03CfDFe1926c3F65F <br> (click to copy 📋) </span>
+            <h3 style="color: white;font-size: medium;"><span id="contract-address" onclick="copy_()">Contract Address
+                0x382A7A98de520cC08522b3d03CfDFe1926c3F65F <br> (click to copy 📋) </span>
               <span style="display: none;" id="contract-popup">Copied to clipboard!</span>
             </h3>
-            <h3 style="color: white">06/06/2021 06:00PM UTC</h3>
+           
           </div>
-          <img src="img/pluto.png" data-aos="fade-up" alt="" class="promo__img" />
+
         </div>
+      </div>
     </section>
 
 
@@ -920,7 +941,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 col-sm-12" >
+          <div class="col-lg-2 col-sm-12">
             <div style="margin-bottom: 40px;">
               <a href="./doc/SavePluto-whitepaper.pdf" class="btn btn--medium btn--white">Whitepaper</a>
             </div>
@@ -1275,65 +1296,70 @@
         <img src="img/subscribe-bg.png" class="contact-bg" alt="" />
       </section> -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <a href="#" class="logo">
-            <img class="logo__img" src="img/pluto.png" alt="">
-            <div class="logo__title">SAVEPLUTO</div>
-          </a>
-          <div class="copyright">© 2021, Savepluto </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="social-block">
-            <div class="social-block__title">
-              Stay connected:
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#" class="logo">
+              <img class="logo__img" src="img/pluto.png" alt="">
+              <div class="logo__title">SAVEPLUTO</div>
+            </a>
+            <div class="copyright">© 2021, Savepluto </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-block">
+              <div class="social-block__title">
+                Stay connected:
+              </div>
+
+              <ul class="social-list">
+                <li class="social-list__item">
+
+                  <a href="https://twitter.com/savepluto_?s=21" class="social-list__link">
+                    <i class="fontello-icon icon-twitter">&#xf309;</i>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://t.me/SavePlutoOfficial" class="social-list__link">
+                    <img src="img/telegram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://discord.gg/pvHNGd4D" class="social-list__link">
+                    <img src="img/discord.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://www.reddit.com/r/SAFEPLUTO69/" class="social-list__link">
+                    <img src="img/reddit.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com/savepluto_official?utm_medium=copy_link" class="social-list__link">
+                    <img src="img/instagram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+              </ul>
             </div>
-  
-            <ul class="social-list">
-              <li class="social-list__item">
-  
-                <a href="https://twitter.com/savepluto_?s=21" class="social-list__link">
-                  <i class="fontello-icon icon-twitter">&#xf309;</i>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://t.me/SavePlutoOfficial" class="social-list__link">
-                  <img src="img/telegram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://discord.gg/pvHNGd4D" class="social-list__link">
-                  <img src="img/discord.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://www.reddit.com/r/SAFEPLUTO69/" class="social-list__link">
-                  <img src="img/reddit.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://instagram.com/savepluto_official?utm_medium=copy_link" class="social-list__link">
-                  <img src="img/instagram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-            </ul>
+          </div>
+          <div class="col-lg-4" id="form-sub">
+            <form action="#" class="form subscribe" id="subscribe-form">
+              <div class="form__title">Subscribe</div>
+              <div class="form__row">
+                <input type="email" name="subscribe_email" class="form__input" placeholder="Email">
+                <button style="margin-bottom:  20px;"
+                  class="form__btn btn btn--uppercase btn--orange btn--small"><span>Send</span></button>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="col-lg-4" id="form-sub">
-          <form action="#" class="form subscribe" id="subscribe-form">
-            <div class="form__title">Subscribe</div>
-            <div class="form__row">
-              <input type="email" name="subscribe_email" class="form__input" placeholder="Email">
-              <button style="margin-bottom:  20px;" class="form__btn btn btn--uppercase btn--orange btn--small"><span>Send</span></button>
-            </div>
-          </form>
-        </div>
       </div>
-    </div>
-  </footer>
-    
+    </footer>
+
   </div>
 
   <script src="js/jquery.min.js"></script>

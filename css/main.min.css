@@ -389,12 +389,38 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-
+@media only screen and (max-width: 600px) {
+ .promo__btns-wrap .btn {
+    width: 95% !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    font-size: medium;
+}
+.promo__btns-wrap{
+ 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+#contract-address{
+  font-size:small !important
+}
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
+    .promo__btns-wrap .btn {
+    width: 85%;
+    text-align: center;
 }
+}
+
+
 
 @media (min-width: 768px) {
   .container {
@@ -8454,6 +8480,11 @@ label.error {
     display: -ms-flexbox;
     display: flex;
   }
+  #imagefff{
+    height: 200px;
+    width:200px
+  }
+
   .promo .btn {
     width: auto;
   }
