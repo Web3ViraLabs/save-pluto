@@ -16,7 +16,7 @@
   <meta property="og:image" content="path/to/image.html" />
   <link rel="icon" href="img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
-  
+
   <!-- Template Basic Images End -->
 
   <!-- Custom Browsers Color Start -->
@@ -55,9 +55,9 @@
     var _html = document.documentElement;
     _html.className = _html.className.replace("no-js", "js");
   </script>
- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script type="text/javascript">
     function copy_() {
       var element = document.getElementById('contract-address');
@@ -76,8 +76,8 @@
 
 
   </script>
-  
-  
+
+
   <style>
     .preloader {
       width: 100%;
@@ -86,53 +86,77 @@
       background-color: #fff;
       z-index: 9999;
     }
-    .mdl-dialog{
-  overflow:scroll;position:fixed;top:5%;width:90%;height:auto;z-index: 10000000;
-}@media only screen and (max-width: 600px) {
- .mdl-dialog{
-   height:80vh;
-   margin-bottom: 5%;
- }
- .mdl-dialog h4{
-   font-size:x-large;
- }
-}
+
+    .mdl-dialog {
+      overflow: scroll;
+      position: fixed;
+      top: 5%;
+      width: 90%;
+      height: auto;
+      z-index: 10000000;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .mdl-dialog {
+        height: 80vh;
+        margin-bottom: 5%;
+      }
+
+      .mdl-dialog h4 {
+        font-size: x-large;
+      }
+    }
   </style>
 </head>
 
-<body >
+<body>
   <div class="preloader"></div>
- <dialog class="mdl-dialog" >
+  <dialog class="mdl-dialog">
     <h4 class="mdl-dialog__title">Terms and conditions</h4>
-    <div class="mdl-dialog__content" style="overflow-y: scroll;height:auto" >
+    <div class="mdl-dialog__content" style="overflow-y: scroll;height:auto">
       <p>
-       SAVEPLUTO tokens is purely entertainment. Before purchasing SAVEPLUTO tokens, you must ensure that the nature, complexity, and risks inherent in the trading of cryptocurrency are suitable for your objectives in light of your circumstances and financial position. You should only purchase SAVEPLUTO to have fun and to experience this experimental game with us. Many factors outside of the control of SAVEPLUTO  Token will affect the market price, including, but not limited to, national and international economic, financial, regulatory, political, terrorist, military, and other events, adverse or positive news events and publicity, and generally extreme, uncertain, and volatile market conditions. Extreme changes in price may occur at any time, resulting in a potential loss of value, complete or partial loss of purchasing power, and difficulty, or a complete inability to sell or exchange your digital currency. SAVEPLUTO  tokens shall be under no obligation to purchase or to broker the purchase back from you of your cryptocurrency in circumstances where there is no viable market for the purchase of the same. None of the content published in this paper constitutes a recommendation that any particular cryptocurrency, portfolio of cryptocurrencies, transaction, or investment strategy is suitable for any specific person. None of the information providers or their affiliates will advise you personally concerning the nature, potential, value, or suitability of any particular cryptocurrency, portfolio of cryptocurrencies, transaction, investment strategy, or other matter. The products and services presented may only be purchased in jurisdictions in which their marketing and distribution are authorized. Play at your own risk and may the odds be ever in your favor.
+        SAVEPLUTO tokens is purely entertainment. Before purchasing SAVEPLUTO tokens, you must ensure that the nature,
+        complexity, and risks inherent in the trading of cryptocurrency are suitable for your objectives in light of
+        your circumstances and financial position. You should only purchase SAVEPLUTO to have fun and to experience this
+        experimental game with us. Many factors outside of the control of SAVEPLUTO Token will affect the market price,
+        including, but not limited to, national and international economic, financial, regulatory, political, terrorist,
+        military, and other events, adverse or positive news events and publicity, and generally extreme, uncertain, and
+        volatile market conditions. Extreme changes in price may occur at any time, resulting in a potential loss of
+        value, complete or partial loss of purchasing power, and difficulty, or a complete inability to sell or exchange
+        your digital currency. SAVEPLUTO tokens shall be under no obligation to purchase or to broker the purchase back
+        from you of your cryptocurrency in circumstances where there is no viable market for the purchase of the same.
+        None of the content published in this paper constitutes a recommendation that any particular cryptocurrency,
+        portfolio of cryptocurrencies, transaction, or investment strategy is suitable for any specific person. None of
+        the information providers or their affiliates will advise you personally concerning the nature, potential,
+        value, or suitability of any particular cryptocurrency, portfolio of cryptocurrencies, transaction, investment
+        strategy, or other matter. The products and services presented may only be purchased in jurisdictions in which
+        their marketing and distribution are authorized. Play at your own risk and may the odds be ever in your favor.
       </p>
     </div>
     <div class="mdl-dialog__actions">
-      <button type="button" class="mdl-button aggree" >Agree</button>
+      <button type="button" class="mdl-button aggree">Agree</button>
       <button type="button" class="mdl-button close">Disagree</button>
     </div>
   </dialog>
   <script type="text/javascript">
- var dialog = document.querySelector('dialog');
+    var dialog = document.querySelector('dialog');
 
 
-    dialog.querySelector('.aggree').addEventListener('click', function() {
-     
+    dialog.querySelector('.aggree').addEventListener('click', function () {
+
       console.log('co');
-      dialog.style="display: none;";
-       localStorage.setItem('dialog',1)
+      dialog.style = "display: none;";
+      localStorage.setItem('dialog', 1)
     });
-     dialog.querySelector('.close').addEventListener('click', function() {
-  
+    dialog.querySelector('.close').addEventListener('click', function () {
+
       console.log('co');
-      localStorage.setItem('dialog',1)
-      dialog.style="display: none;"
+      localStorage.setItem('dialog', 1)
+      dialog.style = "display: none;"
     });
 
- 
- 
+
+
   </script>
   <div class="wrapper">
     <header class="header">
@@ -222,11 +246,13 @@
 
             <div class="promo__btns-wrap">
               <a href="#" class="btn btn--medium btn--orange">View on BSC</a>
-              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x2ac3c79b174892e74ea2cde59be070bed3660ff5" class="btn btn--big btn--blue">Buy on Pancake</a>
+              <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x2ac3c79b174892e74ea2cde59be070bed3660ff5"
+                class="btn btn--big btn--blue">Buy on Pancake</a>
             </div>
           </div>
           <div style="margin-left: 20px;">
-            <h3 style="color: white; font-size: medium;"><span id="contract-address" onclick="copy_()">📋 Contract Address (click to copy)</span>
+            <h3 style="color: white; font-size: medium;"><span id="contract-address" onclick="copy_()">📋 Contract
+                Address (click to copy)</span>
               <span style="display: none;" id="contract-popup">Copied to clipboard!</span>
             </h3>
             <h3 style="color: white">SAVEPLUTO Sales are Live!</h3>
@@ -945,7 +971,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 col-sm-12" >
+          <div class="col-lg-2 col-sm-12">
             <div style="margin-bottom: 40px;">
               <a href="./doc/SavePluto-whitepaper.pdf" class="btn btn--medium btn--white">Whitepaper</a>
             </div>
@@ -1300,65 +1326,70 @@
         <img src="img/subscribe-bg.png" class="contact-bg" alt="" />
       </section> -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <a href="#" class="logo">
-            <img class="logo__img" src="img/pluto.png" alt="">
-            <div class="logo__title">SAVEPLUTO</div>
-          </a>
-          <div class="copyright">© 2021, Savepluto </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="social-block">
-            <div class="social-block__title">
-              Stay connected:
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#" class="logo">
+              <img class="logo__img" src="img/pluto.png" alt="">
+              <div class="logo__title">SAVEPLUTO</div>
+            </a>
+            <div class="copyright">© 2021, Savepluto </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-block">
+              <div class="social-block__title">
+                Stay connected:
+              </div>
+
+              <ul class="social-list">
+                <li class="social-list__item">
+
+                  <a href="https://twitter.com/savepluto_?s=21" class="social-list__link">
+                    <i class="fontello-icon icon-twitter">&#xf309;</i>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://t.me/SavePlutoOfficial" class="social-list__link">
+                    <img src="img/telegram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://discord.gg/yVagGFuv" class="social-list__link">
+                    <img src="img/discord.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://www.reddit.com/r/SavePluto/" class="social-list__link">
+                    <img src="img/reddit.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://instagram.com/savepluto_official?utm_medium=copy_link" class="social-list__link">
+                    <img src="img/instagram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                      alt="" />
+                  </a>
+                </li>
+              </ul>
             </div>
-  
-            <ul class="social-list">
-              <li class="social-list__item">
-  
-                <a href="https://twitter.com/savepluto_?s=21" class="social-list__link">
-                  <i class="fontello-icon icon-twitter">&#xf309;</i>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://t.me/SavePlutoOfficial" class="social-list__link">
-                  <img src="img/telegram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://discord.gg/pvHNGd4D" class="social-list__link">
-                  <img src="img/discord.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://www.reddit.com/r/SAFEPLUTO69/" class="social-list__link">
-                  <img src="img/reddit.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a href="https://instagram.com/savepluto_official?utm_medium=copy_link" class="social-list__link">
-                  <img src="img/instagram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;" alt="" />
-                </a>
-              </li>
-            </ul>
+          </div>
+          <div class="col-lg-4" id="form-sub">
+            <form action="#" class="form subscribe" id="subscribe-form">
+              <div class="form__title">Subscribe</div>
+              <div class="form__row">
+                <input type="email" name="subscribe_email" class="form__input" placeholder="Email">
+                <button style="margin-bottom:  20px;"
+                  class="form__btn btn btn--uppercase btn--orange btn--small"><span>Send</span></button>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="col-lg-4" id="form-sub">
-          <form action="#" class="form subscribe" id="subscribe-form">
-            <div class="form__title">Subscribe</div>
-            <div class="form__row">
-              <input type="email" name="subscribe_email" class="form__input" placeholder="Email">
-              <button style="margin-bottom:  20px;" class="form__btn btn btn--uppercase btn--orange btn--small"><span>Send</span></button>
-            </div>
-          </form>
-        </div>
       </div>
-    </div>
-  </footer>
-    
+    </footer>
+
   </div>
 
   <script src="js/jquery.min.js"></script>
