@@ -153,7 +153,7 @@
     </header>
 
     <div class="fixed-menu">
-      <div class="fixed-menu__header">
+      <div class="fixed-menu__header" >
         <div class="logo">
           <div class="logo__img"></div>
           <div class="logo__title"><span><b>SAVEPLUTO</b></span></div>
@@ -170,7 +170,7 @@
         </div>
       </div>
 
-      <div class="fixed-menu__content">
+      <div class="fixed-menu__content" style="height:75%">
         <ul class="mob-menu">
 
           <li class="mob-menu__item">
@@ -190,6 +190,44 @@
           </li>
         </ul>
       </div>
+      <div class="col-lg-4">
+        <div class="social-block">
+
+
+          <ul class="social-list" style="display:flex;justify-content: space-between;">
+            <li class="social-list__item">
+
+              <a href="https://twitter.com/savepluto_?s=21" class="social-list__link">
+                <i class="fontello-icon icon-twitter">&#xf309;</i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://t.me/SavePlutoOfficial" class="social-list__link">
+                <img src="img/telegram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                  alt="" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://discord.gg/yVagGFuv" class="social-list__link">
+                <img src="img/discord.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                  alt="" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://www.reddit.com/r/SavePluto/" class="social-list__link">
+                <img src="img/reddit.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                  alt="" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://instagram.com/savepluto_official?utm_medium=copy_link" class="social-list__link">
+                <img src="img/instagram.png" style="height: 25px; width: 30px; padding-left: 8px; padding-top: 6px;"
+                  alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <video autoplay muted loop id="myVideo" playsinline>
       <source src="./video/SpaceBG.mp4" type="video/mp4">
@@ -198,8 +236,7 @@
       <div class="container">
         <div class="row"
           style="display:flex;flex-direction:column;width:100%;align-items:center;margin:0px;justify-content:center">
-          <img src="img/pluto.png" data-aos="fade-up" alt=""
-          id="imagefff"
+          <img src="img/pluto.png" data-aos="fade-up" alt="" id="imagefff"
             style="height:250px;width:250px;margin-bottom: 20px;align-self: center;" />
           <div class="col-12 promo__content" data-aos="fade-right"
             style="display:flex;align-items:center;flex-direction:column">
@@ -224,7 +261,7 @@
                 0x382A7A98de520cC08522b3d03CfDFe1926c3F65F <br> (click to copy 📋) </span>
               <span style="display: none;" id="contract-popup">Copied to clipboard!</span>
             </h3>
-           
+
           </div>
 
         </div>
@@ -237,13 +274,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-4">
-              <a
-                data-jarallax-element="-40"
-                href="https://www.youtube.com/watch?v=ySt8B6O_E0c"
-                class="economy__video-btn video__btn popup-youtube" 
-              >
-                <img src="img/video-btn.png" alt="" />
-              </a> 
+            <a data-jarallax-element="-40" href="https://www.youtube.com/watch?v=ySt8B6O_E0c"
+              class="economy__video-btn video__btn popup-youtube">
+              <img src="img/video-btn.png" alt="" />
+            </a>
 
             <div class="economy__block">
               <div class="economy__block-content">
@@ -570,7 +604,7 @@
                 <p class="cases__item-text">
                   Aside from an industry-standard format and structure, the only notable thing about the SAVEPLUTO Smart
                   Contract is the
-                  fact that it applies a 10% Transaction Tax. 7% goes to holders and 3% goes to LP
+                  fact that it applies a 10% Transaction Tax. 4% goes to holders, 4% goes to LP and 2% goes to marketing
                 </p>
               </div>
             </div>
@@ -746,65 +780,62 @@
     </section>
 
 
-    <iframe name="Framename" src="https://dex.guru/token/0x382a7a98de520cc08522b3d03cfdfe1926c3f65f-bsc" width=100% height="500" frameborder="0" scrolling="auto"
-      class="frame-area">
-    </iframe>
 
-    <!--  <section class="data">
-        <div class="container data__container">
-          <div class="row">
-            <div class="col">
-              <img src="img/data-bg.png" class="data__img" alt="" />
-              <div class="counter__item counter__item-1">
-                <div class="counter__item-title">
-                 BTC
-                </div>
-                <div
-                  class="
+
+    <section class="section about" style="align-items: center;
+    display: flex;
+    justify-content: center;">
+
+      <iframe style="z-index: 100000000;position: relative;" name="Framename"
+        src="https://dex.guru/token/0x382a7a98de520cc08522b3d03cfdfe1926c3f65f-bsc" width=80% height="700"
+        frameborder="0" scrolling="auto" class="frame-area">
+      </iframe>
+    </section>
+
+    <section class="data">
+      <div class="container data__container">
+        <div class="row">
+          <div class="col">
+            <img src="img/data-bg.png" class="data__img" alt="" />
+            <div class="counter__item counter__item-1">
+              <div class="counter__item-title">
+                BTC
+              </div>
+              <div class="
                     counter counter__item-value counter__item-value--blue
                     numscroller
-                  "
-                  id="btc"
-                >
-                  0.052646
-                </div>
+                  " id="btc">
+                0.052646
               </div>
-              <div class="counter__item counter__item-2">
-                <div class="counter__item-title">BNB</div>
-                <div
-                id="bnb"
-                  class="counter counter__item-value counter__item-value--pink"
-                >
-                  5.658
-                </div>
+            </div>
+            <div class="counter__item counter__item-2">
+              <div class="counter__item-title">BNB</div>
+              <div id="bnb" class="counter counter__item-value counter__item-value--pink">
+                5.658
               </div>
-              <div class="counter__item counter__item-3">
-                <div class="counter__item-title">ETH</div>
-                <div
-                id="eth"
-                  class="counter counter__item-value counter__item-value--green"
-                >
-                  20.324
-                </div>
+            </div>
+            <div class="counter__item counter__item-3">
+              <div class="counter__item-title">ETH</div>
+              <div id="eth" class="counter counter__item-value counter__item-value--green">
+                20.324
               </div>
-              <div class="counter__item counter__item-4">
-                <div class="counter__item-title">Total Maketcap</div>
-                <div
-                  class="
+            </div>
+            <div class="counter__item counter__item-4">
+              <div class="counter__item-title">Total Maketcap</div>
+              <div class="
                     counter
                     counter__item-value
                     counter__item-value--percent
                     counter__item-value--purpure
-                  "
-                >
-                  65
-                </div>
+                  ">
+                65
               </div>
             </div>
           </div>
         </div>
-        <img src="img/data-bg-space.png" class="data__bg" alt="" />
-      </section> -->
+      </div>
+      <img src="img/data-bg-space.png" class="data__bg" alt="" />
+    </section>
 
     <!--  <section class="section section--no-pad-bot facts">
         <div class="container">
